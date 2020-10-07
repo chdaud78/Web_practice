@@ -1,25 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-ol, li, ul {
-    list-style: none;
-}
-
-.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
-.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때 */
-.ir_su {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
-
-.mt10 { margin-top: 10px;}
-
 /* 스킵메뉴 */
 #skip {
     position: relative;
@@ -689,4 +670,71 @@ ol, li, ul {
 
 .notice_hover2 ul li a:hover {
     color: #390;
+}
+
+/* 컨텐츠 요소를 보이지 않게 하는 방법
+1. display:none -- display:block (영역이 사라짐)
+2. visibility: hidden -- visibility: visible (영역유지)
+3. opacity: 0 -- opacity: 1 (영역유지)
+4. width:0; height:0; overflow:hidden;
+*/
+
+/*탭 메뉴 게시판*/
+.notice_tap {
+    position: relative;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    height: 105px;
+}
+
+.notice_tap ul {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice_tap ul li {
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+.notice_tap ul li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.notice_tap ul li ul {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    width: 270px;
+    border:0;
+}
+
+.notice_tap ul li ul li {
+    float:none;
+    border:0;
+    background: url(img/dot.gif) no-repeat 9px 5px;
+    padding-left: 15px;
+}
+
+.notice_tap ul li ul li a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.notice_tap ul li.active {
+    background: #2c94c4;
+}
+
+.notice_tap ul li.active a {
+    color: #fff;
+}
+
+.notice_tap ul li.active ul li a {
+    color: #333;
 }
