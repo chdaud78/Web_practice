@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 * {
     margin: 0;
@@ -7,6 +8,10 @@
 
 a {
     text-decoration: none;
+}
+
+ol, li, ul {
+    list-style: none;
 }
 
 .ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
@@ -40,24 +45,17 @@ a {
 
 /* 레이아웃 */
 #wrap {
-    width: 100%;
-    
 }
 
 #header {
-    width: 100%;
     height: 325px;
     background: url('img/header_bg.jpg') center top;
 }
 
 #contents {
-    width: 100%;
-    height: 800px;
-    background-color: #222;
 }
 
 #footer {
-    width: 100%;
     height: 200px;
     background-color: #333;
 }
@@ -72,21 +70,15 @@ a {
 
 /* 컨텐츠 레이아웃 */
 #cont_nav {
-    width: 100%;
-    height: 200px;
-    background-color: #333;
+   background-color: #f6fdff;
 }
 
 #cont_tit {
-    width: 100%;
-    height: 200px;
-    background-color: #444;
+    background-color: #EAF7FD;
 }
 
 #cont_ban {
-    width: 100%;
-    height: 200px;
-    background-color: #555;
+   background-color: #dceff7;
 }
 
 #cont_cont {
@@ -182,4 +174,144 @@ a {
 
 .header .header-icon a.icons4:hover {
     background-position: -60px -180px;
+}
+
+/* float: left로 인한 영역깨짐(height:0) 방지법 
+1. 깨지는 영역에 똑같이 float:left를 사용한다.(X) --> 모든 박스에 float:left를 사용하게 됩니다.
+2. float의 성질을 차단하는 clear: both;를 사용한다.(X) --> 어떤 영역이 깨졌는지 찾기 어려움.
+3. float을 사용한 상위 박스한테 overflow: hidden을 사용합니다. (O) --> 현재는 제일 많이 사용.
+4. clearfix를 사용합니다. (O)
+*/
+
+/*전체 메뉴*/
+
+.nav {
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.nav > div {
+    width: 40%;
+    float: left;
+}
+
+.nav > div:last-child {
+    width: 20%;
+}
+
+.nav > div h3 {
+    font-size: 18px; 
+    color: #25a2d0; 
+    margin-bottom: 4px;
+    font-weight: normal;
+}
+
+.nav > div ol {
+    overflow: hidden;
+}
+
+.nav > div ol li {
+    float:left;
+    width: 50%;
+}
+
+.nav > div ol li a{
+    font-size: 13px;
+    line-height: 1.5;
+    color: #222;
+}
+
+.nav > div.last ol li {
+    width: 100%;
+}
+
+.nav > div ol li a:hover {
+    text-decoration: underline;
+    color: #390;
+}
+
+/* 컨텐츠 제목 */
+
+.title {
+    position: relative;
+}
+
+.title h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    color: #2c94c4;
+    font-weight: normal;
+    font-family: 'Nanum Brush Script', cursive;
+}
+
+.title .btn {
+    position: absolute;
+    top: 5px;
+    right:0;
+    width: 60px; 
+    height: 60px;
+    background: url("img/icon.png") no-repeat 0 -600px;
+}
+
+/* 베너 */
+.ban{
+    position: relative;
+    padding: 24px 0 20px
+}
+
+.ban .prev{
+    position: absolute;
+    left: -80px; 
+    top: 60px;
+    width: 43px; 
+    height: 43px; 
+    background: url("img/icon.png") no-repeat -150px -0px;
+}
+
+.ban .next {
+    position: absolute;
+    right: -80px; 
+    top: 60px; 
+    width: 43px; 
+    height: 43px; 
+    background: url("img/icon.png") no-repeat -150px -43px;
+}
+
+.ban .prev:hover {
+    background-position: -193px 0;
+}
+
+.ban .next:hover {
+    background-position: -193px -43px;
+}
+
+.ban ul {
+    overflow: hidden;
+}
+
+.ban ul li {
+    float: left;
+    width: 330px;
+}
+
+.ban ul li.banner1 {
+    text-align: left;
+}
+
+.ban ul li.banner2 {
+    text-align: center;
+}
+
+.ban ul li.banner3 {
+    text-align: right;
+}
+
+.ban ul li img {
+    border: 4px solid #dcdcdc;
+}
+
+.ban ul li img:hover {
+    border-color: #98bcdc
 }
