@@ -373,8 +373,9 @@ ol, li, ul {
 
 .cont .icon_desc {
     padding-left: 70px; 
-    border-bottom: 1px solid #d0d0d0; 
     padding-bottom: 15px;
+    border-bottom: 1px solid #d0d0d0; 
+    font-size: 13px;
 }
 
 .cont .col1 .icon_img {
@@ -427,7 +428,7 @@ ol, li, ul {
 
 /* 게시판 */
 .notice {
-    padding-top: 10px;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -458,15 +459,16 @@ ol, li, ul {
 .notice .more {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 0;
     background: url("img/icon.png") no-repeat  -150px -90px; 
     width: 17px; 
     height: 17px;;
 }
 
+/*게시판2*/
 .notice2 {
-    padding-top: 10px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -501,6 +503,7 @@ ol, li, ul {
 .notice2 ul li span {
     font-size: 13px;
     font-weight: 300;
+    text-align: right;
     width: 30%;
     float: right;
 }
@@ -508,9 +511,63 @@ ol, li, ul {
 .notice2 .more {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 0;
     background: url("img/icon.png") no-repeat  -150px -90px; 
     width: 17px; 
-    height: 17px;;
+    height: 17px;
+}
+
+/*게시판3*/
+.notice3 {
+    position: relative;
+    margin-top:10px;
+}
+
+.notice3 h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.notice3 li {
+    position: relative;
+    padding: 8px 0 20px 60px;
+}
+
+.notice3 li a img {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #0093bd;
+}
+
+.notice3 li a strong {
+    display: block;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    font-size: 13px;
+    color: #222;
+}
+
+.notice3 li a span {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #222;
+}
+
+.notice3 .more {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: url("img/icon.png") no-repeat  -150px -90px; 
+    width: 17px; 
+    height: 17px;
 }
