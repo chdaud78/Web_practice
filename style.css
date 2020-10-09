@@ -39,8 +39,7 @@
 }
 
 #footer {
-    height: 200px;
-    background-color: #333;
+    border-top: 1px solid #eee;
 }
 
 /* 컨테이너 */
@@ -716,8 +715,9 @@
 .notice_tap ul li ul li {
     float:none;
     border:0;
-    background: url(img/dot.gif) no-repeat 9px 5px;
-    padding-left: 15px;
+    background: url(img/dot.gif) no-repeat 9px 8px;
+    padding-left: 18px;
+    padding-bottom: 8px;
 }
 
 .notice_tap ul li ul li a {
@@ -725,6 +725,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 12px;
+    width:100%;
+    padding: 0 0 3px 0;
+}
+
+.notice_tap ul li ul li a:hover {
+    color: #390 !important;
 }
 
 .notice_tap ul li.active {
@@ -737,4 +743,257 @@
 
 .notice_tap ul li.active ul li a {
     color: #333;
+}
+
+/* 공지사항 게시판 */
+.notice04 {
+    border: 1px solid #ccc;
+}
+
+.notice04 h4 {
+    color: #0093bd;
+    font-weight: 700;
+    padding: 8px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice04 em {
+    color: #cf3292;
+    font-style: normal;
+}
+
+.notice04 ul {
+    padding: 10px
+}
+
+.notice04 ul li {
+    overflow: hidden;
+    background: url("img/dot.gif") no-repeat 0px 8px;
+    
+    padding-bottom: 2px;
+}
+
+.notice04 ul li a {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 8px;
+    width: 60%;
+}
+
+.notice04 ul li a:hover {
+    color: #390;
+}
+
+.notice04 ul li span {
+    float: right;
+    width: 30%;
+    text-align: right;
+    font-size: 13px;
+}
+
+/* 갤러리 */
+.gallery {
+    border: 1px solid #ccc;
+    position: relative;
+    height: 254px;
+    overflow: hidden;
+}
+
+.gallery h4 {
+    padding: 10px 0 8px 11px;
+    font-size: 14px;
+    color: #0093bd;
+    font-weight: bold;
+}
+
+.gallery .gallery_btn {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+.gallery .gallery_btn ul {
+    overflow: hidden;
+}
+
+.gallery .gallery_btn ul li {
+    float: left;
+    margin: 1px 2px;
+}
+
+.gallery .gallery_btn ul li a {
+    display:block;
+    width: 23px; 
+    height: 23px;
+    background: url("img/icon.png") no-repeat;
+}
+
+.gallery .gallery_btn .gal_btn01 a{
+    background-position: -150px -120px;
+}
+
+.gallery .gallery_btn .gal_btn02 a{
+    background-position: -150px -143px;
+}
+
+.gallery .gallery_btn .gal_btn03 a{
+    background-position: -150px -166px;
+
+}
+
+.gallery .gallery_btn .gal_btn04 a{
+    background-position: -150px -189px;
+}
+
+.gallery .gallery_btn .gal_btn01 a:hover{
+    background-position: -173px -120px;
+}
+
+.gallery .gallery_btn .gal_btn02 a:hover{
+    background-position: -173px -143px;
+}
+
+.gallery .gallery_btn .gal_btn03 a:hover{
+    background-position: -173px -166px;
+
+}
+
+.gallery .gallery_btn .gal_btn04 a:hover{
+    background-position: -173px -189px;
+}
+
+.gallery .gallery_img img{
+    width: 100%;
+}
+
+/* 로그인 */
+.login {
+    background-color: #f2f4f5;
+    padding: 15px;
+}
+
+.login .login_header {
+    overflow: hidden;
+    font-size: 12px;
+    padding-bottom: 5px;
+    height: 30px;
+}
+
+.login .login_header .lh_check {
+    float: left;
+    padding-right: 15px;
+}
+
+.login .login_header .lh_check .input_check {
+    vertical-align: -1px;
+}
+
+.login .login_header .lh_ip {
+    float: left;
+}
+
+.login .login_header .lh_ip em {
+    color: #0093bd;
+    text-decoration: underline;
+}
+
+.login .login_content {
+    font-size: 12px;
+    position: relative;
+}
+
+.login .login_content .input_text {
+    margin-bottom: 5px;
+    width: 182px;
+    height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #bebebe;
+}
+
+.login .login_content .login_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #bebebe;
+}
+
+.login .login_footer {
+    margin-top: 5px;
+}
+
+.login_footer li {
+    display: inline;
+    font-size: 12px;
+}
+
+.login .login_footer a:hover{
+    color: #390;
+}
+
+/* 팝업 */
+.popup {
+
+}
+
+.popup h4 {
+    font-size: 14px;
+    color: #0093bd;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.popup ul {
+    overflow: hidden;
+}
+
+.popup ul li {
+    float: left;
+    width: 93px;
+    margin-right: 5px;
+}
+
+.popup ul li:last-child { /* ie9이상만가능 그 이하는 class 붙여서 따로 설정 */
+    margin-right: 0;
+}
+
+.popup ul li a img {
+    width: 100%;
+}
+
+/* footer */
+#footer .container {
+    margin-top: 30px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer ul {
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    display: inline;
+ 
+}
+
+.footer ul li::before {
+    content: "|";
+    padding-left: 7px;
+    padding-right: 10px;
+}
+
+.footer ul li:first-child::before {
+    content: "";
+}
+
+.footer .w3c {
+    margin: 15px 0 15px 0;
 }
