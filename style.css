@@ -27,15 +27,10 @@
 }
 
 /* 레이아웃 */
-#wrap {
-}
 
 #header {
     height: 325px;
     background: url('img/header_bg.jpg') center top;
-}
-
-#contents {
 }
 
 #footer {
@@ -886,7 +881,7 @@
     top: 7px;
 }
 
-.gallery .gallery_btn ul {
+/* .gallery .gallery_btn ul {
     overflow: hidden;
 }
 
@@ -900,8 +895,9 @@
     width: 23px; 
     height: 23px;
     background: url("img/icon.png") no-repeat;
-}
+} */
 
+/* 
 .gallery .gallery_btn .gal_btn01 a{
     background-position: -150px -120px;
 }
@@ -933,6 +929,48 @@
 }
 
 .gallery .gallery_btn .gal_btn04 a:hover{
+    background-position: -173px -189px;
+} */
+.gallery .gallery_btn button{
+    float: left;
+    display:block;
+    width: 23px; 
+    height: 23px;
+    margin: 1px 2px;
+    background: url("img/icon.png") no-repeat;
+}
+
+.gallery .gallery_btn .gal_btn01 {
+    background-position: -150px -120px;
+}
+
+.gallery .gallery_btn .gal_btn02 {
+    background-position: -150px -143px;
+}
+
+.gallery .gallery_btn .gal_btn03 {
+    background-position: -150px -166px;
+
+}
+
+.gallery .gallery_btn .gal_btn04 {
+    background-position: -150px -189px;
+}
+
+.gallery .gallery_btn .gal_btn01:hover{
+    background-position: -173px -120px;
+}
+
+.gallery .gallery_btn .gal_btn02:hover{
+    background-position: -173px -143px;
+}
+
+.gallery .gallery_btn .gal_btn03:hover{
+    background-position: -173px -166px;
+
+}
+
+.gallery .gallery_btn .gal_btn04:hover{
     background-position: -173px -189px;
 }
 
@@ -1008,9 +1046,6 @@
 }
 
 /* 팝업 */
-.popup {
-
-}
 
 .popup h4 {
     font-size: 14px;
