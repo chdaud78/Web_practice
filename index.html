@@ -344,29 +344,29 @@
                                     </li>
                                     <li>
                                         <a href="#">공지사항2</a>
-                                        <ul style= "display:none;">
+                                        <ul>
                                             <li>
-                                                <a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
+                                                <a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
                                             <li>
-                                                <a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
+                                                <a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
                                             <li>
-                                                <a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
+                                                <a href="#">두 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">공지사항3</a>
-                                        <ul style= "display:none;">
+                                        <ul>
                                             <li>
-                                                <a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
+                                                <a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
                                             <li>
-                                                <a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
+                                                <a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
                                             <li>
-                                                <a href="#">첫 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
+                                                <a href="#">세 번째 공지사항 탭메뉴 테스트 목록입니다. 첫 번째 공지사항 탭메뉴 테스트 목록입니다.</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -446,6 +446,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="slick.min.js"></script>
     <script>
+        /*베너 스크립트*/
           $('.ban').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -453,6 +454,7 @@
             autoplaySpeed: 2000,
             dots: true,
         });
+        /* 메뉴 스크립트 */
         $(".title .btn").click (function (e) {
             e.preventDefault();
             //$("#cont_nav").css("display","block");
@@ -464,6 +466,19 @@
             $("#cont_nav").slideToggle();
             $(this).toggleClass('on');
         });
+        // 탭 메뉴 스크립트
+        var $tap_list = $(".notice_tap");
+        $tap_list.find('ul ul').hide();
+        $tap_list.find('li.active > ul').show();
+
+        function tabMenu(e) {
+            e.preventDefault();
+            var $this = $(this);
+            $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('>ul').hide()
+        }
+
+        $tap_list.find('ul > li > a').click(tabMenu).focus(tabMenu);
+
     </script>
 </body>
 </html>
