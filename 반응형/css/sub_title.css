@@ -1,0 +1,40 @@
+#title {
+    background-color: #eaf7fd;
+}
+
+#title .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#title .title {
+    text-align: center;
+    position: relative;
+}
+
+.title h2 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 39px;
+    color: #0093bd;
+    padding: 5px 0;
+}
+
+.title .button {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #3192bf;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.title .button:hover {
+    box-shadow: 
+        0 0 0 3px rgba(71,154,191,0.9) inset,
+        0 0 0 100px rgba(0,0,0,0.1) inset;
+}
