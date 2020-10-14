@@ -1,12 +1,10 @@
+.container{
+width: 1200px;
+margin: 0 auto;
+}
 /* header layout */
 #header {
     background: url("../img/header_bg.jpg") repeat-x center top;
-}
-
-#header .container {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 #header .header {
@@ -134,8 +132,5 @@ text-align: right;
 }
 
 
-/* media query */
-@media (max-width: 1220px) {
-    #header .container {width:100%;}
-    #header .row {padding: 0 15px;}
-}
+
+
