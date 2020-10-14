@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/media_query.css">
         <link rel="stylesheet" href="css/slick.css">
-        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/lightgallery.css">
         <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
         <!-- Facebook meta tags -->
@@ -278,8 +278,20 @@
                             </article>
                             <!-- //col4 -->
                             <article class="column col05">
-                                <h4 class="cont_tit">Title</h4>
-                                <p class="cont_desc">이 곳은 설명 부분 입니다</p>
+                                <h4 class="cont_tit">Filter Effect</h4>
+                                <p class="cont_desc">CSS3에서는 Background-blend-mode, mix-blend-mode, filter와 같이 포토샵에 다루는 효과들이 있습니다.</p>
+                                <div class="lightgallery square clearfix">
+                                    <a href="img/light01_s.jpg"><img src="img/light01.jpg" alt="이미지"><em>blur</em></a>
+                                    <a href="img/light02_s.jpg"><img src="img/light02.jpg" alt="이미지"><em>brightness</em></a>
+                                    <a href="img/light03_s.jpg"><img src="img/light03.jpg" alt="이미지"><em>contrast</em></a>
+                                    <a href="img/light04_s.jpg"><img src="img/light04.jpg" alt="이미지"><em>grayscale</em></a>
+                                    <a href="img/light05_s.jpg"><img src="img/light05.jpg" alt="이미지"><em>hueerotae</em></a>
+                                    <a href="img/light06_s.jpg"><img src="img/light06.jpg" alt="이미지"><em>invert</em></a>
+                                    <a href="img/light07_s.jpg"><img src="img/light07.jpg" alt="이미지"><em>opacity</em></a>
+                                    <a href="img/light08_s.jpg"><img src="img/light08.jpg" alt="이미지"><em>saturate</em></a>
+                                    <a href="img/light09_s.jpg"><img src="img/light09.jpg" alt="이미지"><em>sepia</em></a>
+                                    <a href="img/light10_s.jpg"><img src="img/light10.jpg" alt="이미지"><em>mix</em></a>
+                                </div>
                             </article>
                             <!-- //col5 -->
                             <article class="column col06">
@@ -327,6 +339,7 @@
         <script src="js/jquery.min_1.12.4.js"></script>
         <script src="js/modernizr-custom.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/lightgallery.min.js"></script>
         <script>
             //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
             //http://twitter.com/intent/tweet?text={페이지 제목}&url={페이지링크}
@@ -355,6 +368,9 @@
                     }
                 ]
             });
+
+            //light gallery
+            $(".lightgallery").lightGallery(); 
         </script>
     </body>
 </html>

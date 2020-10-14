@@ -3,9 +3,13 @@
     .container {width: 100%;}
     .row {padding: 0 15px;}
     .contents {border: 0;}
+    .square a {width: 24%;}
+    .square a:nth-child(5n) {display: none;}
 }
-@media (max-width: 1024px) {
 
+@media (max-width: 1024px) {
+    .square a {width: 32.3333%;}
+    .square a:nth-child(5) {display: block;}
 }
 
 @media (max-width: 960px) {
@@ -62,6 +66,9 @@
     .slider figcaption {padding: 10px;}
     .slider figcaption em {font-size: 18px;}
     .slider figcaption span {font-size: 14px;}
+
+    .square a {width: 49%;}
+    .square a:nth-child(5) {display: none;}
 }
 
 @media (max-width: 480px) {
@@ -69,5 +76,5 @@
 }
 
 @media (max-width: 320px) {
-
+    .square a {width: 100%; margin-left: 0; margin-right: 0;}
 }

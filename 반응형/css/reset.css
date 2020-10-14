@@ -30,6 +30,12 @@ h1, h2, h3, h4, h5, h6 {font-size: 13px; font-weight: normal;}
     margin: 0 auto;
 }
 
+/* clearfix */
+.clearfix {*zoom: 1;}
+.clearfix:before, .clearfix:after {display: block; content: ''; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
 /* 버튼 초기화*/
 button {border: 0;}
 
