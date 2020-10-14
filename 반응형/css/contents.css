@@ -199,8 +199,6 @@
 }
 
 /* col04 슬라이더 이미지 */
-.col04 .slider {}
-
 .slider img {width: 100%;}
 
 .slider figure {position: relative;}

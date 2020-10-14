@@ -1,3 +1,38 @@
 #footer {
     border-top: 1px solid #dbdbdb;
 }
+
+.footer {
+    text-align: center;
+    padding: 30px 50px;
+}
+
+.footer li {
+   display: inline-block;
+   white-space: nowrap;
+   /* position: relative;
+   display: inline;
+   padding: 0 7px 0 10px;
+  */
+}
+
+.footer li:first-child a::before {
+    content: '';
+}
+
+.footer li a::before {
+    content: '|';
+    padding-right: 5px;
+    color: #dbdbdb;
+    /* content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #dbdbdb;
+    position: absolute;
+    left: 0;
+    top: 2px; */
+}
+
+.footer address {
+    padding-top: 15px;
+}

@@ -311,18 +311,33 @@
                         <article id="right_content">
                             <h3 class="ir_su">반응형 사이트 오른쪽 컨텐츠</h3>
                             <article class="column col07">
-                                <h4 class="cont_tit">Title</h4>
-                                <p class="cont_desc">이 곳은 설명 부분 입니다</p>
+                                <h4 class="cont_tit">Effect1</h4>
+                                <p class="cont_desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+                                <div class="side01">
+                                    <figure>
+                                        <img src="img/side1.jpg" alt="이미지1">
+                                    </figure>
+                                </div>
                             </article>
                             <!-- //col7 -->
                             <article class="column col08">
-                                <h4 class="cont_tit">Title</h4>
-                                <p class="cont_desc">이 곳은 설명 부분 입니다</p>
+                                <h4 class="cont_tit">Effect2</h4>
+                                <p class="cont_desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+                                <div class="side02">
+                                    <figure>
+                                        <img src="img/side2.jpg" alt="이미지2">
+                                    </figure>
+                                </div>
                             </article>
                             <!-- //col8 -->
                             <article class="column col09">
-                                <h4 class="cont_tit">Title</h4>
-                                <p class="cont_desc">이 곳은 설명 부분 입니다</p>
+                                <h4 class="cont_tit">Effect3</h4>
+                                <p class="cont_desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+                                <div class="side03">
+                                    <figure>
+                                        <img src="img/side3.jpg" alt="이미지3">
+                                    </figure>
+                                </div>
                             </article>
                             <!-- //col9 -->
                         </article>
@@ -335,7 +350,24 @@
 
         <footer id="footer">
             <div class="container">
-                <h2>반응형 사이트 푸터</h2>
+                <div class="row">
+                    <div class="footer">
+                        <ul>
+                            <li><a href="#">사이트 도움말</a></li>
+                            <li><a href="#">사이트 이용약관</a></li>
+                            <li><a href="#">사이트 운영원칙</a></li>
+                            <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                            <li><a href="#">책임의 한계와 법적고지</a></li>
+                            <li><a href="#">게시중단요청서비스</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                        <address>
+                            Copyright ©
+                            <a href="http://webstoryboy.co.kr"><strong>webstoryboy</strong></a>
+                            All Rights Reserved.
+                        </address>
+                    </div>
+                </div>
             </div>
         </footer>
         <!-- footer -->
@@ -378,6 +410,25 @@
 
             //light gallery
             $(".lightgallery").lightGallery(); 
+
+            //nav 접기 펼치기 effect
+            $(".button").click(function(e){
+                e.preventDefault();
+                $('#nav').slideToggle();
+                $(this).toggleClass('on');
+
+                if($('.button').hasClass("on")){
+                    $(".button").find("svg").attr("class","svg-inline--fa fa-angle-up fa-w-10");
+                }else {
+                    $(".button").find("svg").attr("class","svg-inline--fa fa-angle-down fa-w-10");
+                }
+            });
+            $(window).resize(function(){
+                var wWidth = $(window).width();
+                if(wWidth > 600){
+                    $("#nav").removeAttr("style");
+                }
+            });
         </script>
     </body>
 </html>
