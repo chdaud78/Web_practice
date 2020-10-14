@@ -2,6 +2,7 @@
 @media (max-width: 1220px) {
     .container {width: 100%;}
     .row {padding: 0 15px;}
+    .contents {border: 0;}
 }
 @media (max-width: 1024px) {
 
@@ -14,10 +15,13 @@
     .nav .menu01 li {width: 33.3333%;}
     .nav .menu02 li {width: 33.3333%;}
     .nav .menu03 li {width: 33.3333%;}
+    .contents #right_content {position: static; width: 100%; border-top: 1px solid #dbdbdb;}
+    .contents #center_content {margin-right: 0; border-right: 0;}
 }
 
 @media (max-width: 768px) {
-
+    .contents #left_content {float: none; width: 100%;}
+    .contents #center_content {border-left: 0;}
 }
 
 @media (max-width: 600px) {
@@ -27,6 +31,33 @@
     .nav .menu01 li {width: 50%;}
     .nav .menu02 li {width: 50%;}
     .nav .menu03 li {width: 50%;}
+    .title .button {display: none;}
+    .column.col01 {padding: 0; border-bottom:0;}
+    .column.col01 .cont_menu ul {overflow: hidden;}
+    .column.col01 .cont_tit {display: none;}
+    .column.col01 .cont_desc {display: none;}
+    .column.col01 .cont_menu li {
+        float: left;
+        width: 33.3333%;
+        text-align: center;
+        border-right: 1px solid #dbdbdb;
+        box-sizing: border-box;
+    }
+    .column.col01 .cont_menu li:nth-child(3n) {border-right: 0;}
+    .column.col01 .cont_menu li a {
+        color: #fff;
+        text-shadow: 0 0 5px rgba(0,0,0,0.7);
+    }
+    .column.col01 .cont_menu li a:hover {
+        box-shadow: none; 
+        background: rgba(36,130,174,0.3);
+
+    }
+    .col01 .cont_menu li a svg {
+        display: none;
+    }
+    .col02 {background-color: #fff;}
+    .col04 {border-top: 1px solid #dbdbdb;}
 }
 
 @media (max-width: 480px) {

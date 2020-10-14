@@ -1,9 +1,6 @@
-.container{
-width: 1200px;
-margin: 0 auto;
-}
+
 /* header layout */
-#header {
+body {
     background: url("../img/header_bg.jpg") repeat-x center top;
 }
 
