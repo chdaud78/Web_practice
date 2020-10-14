@@ -248,6 +248,10 @@
     transform: translateX(0);
 }
 
+.slider .slick-dots .slick-active button {
+    background-color: #2b91c8;
+}
+
 .slider .slick-dots {text-align: center;}
 
 .slider .slick-dots li {
