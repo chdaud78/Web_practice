@@ -346,3 +346,11 @@
 .square a:nth-child(8):hover img {filter: saturate(10%);}
 .square a:nth-child(9):hover img {filter: sepia(120%);}
 .square a:nth-child(10):hover img {filter: sepia(120%) hue-rotate(120deg);}
+
+/* col06 video */
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.video iframe {position: absolute; width:100%; height: 100%;}
