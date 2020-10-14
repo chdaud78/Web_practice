@@ -29,7 +29,10 @@ h1, h2, h3, h4, h5, h6 {font-size: 13px; font-weight: normal;}
     width: 1200px;
     margin: 0 auto;
 }
-    
+
+/* 버튼 초기화*/
+button {border: 0;}
+
 /* margin, padding */
 .mt10 {margin-top: 10px !important;}
 .mt15 {margin-top: 15px !important;}

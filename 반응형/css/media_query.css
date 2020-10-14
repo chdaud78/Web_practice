@@ -58,6 +58,10 @@
     }
     .col02 {background-color: #fff;}
     .col04 {border-top: 1px solid #dbdbdb;}
+
+    .slider figcaption {padding: 10px;}
+    .slider figcaption em {font-size: 18px;}
+    .slider figcaption span {font-size: 14px;}
 }
 
 @media (max-width: 480px) {
