@@ -356,3 +356,156 @@
     padding-bottom: 56.25%;
 }
 .video iframe {position: absolute; width:100%; height: 100%;}
+
+/* col07 side01 effect01 */
+.column.col07 .side01 {
+    position: relative;
+    display: block;
+    perspective: 600px;
+}
+
+.column.col07 .card {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.column.col07 .side01 .front {
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+
+.column.col07 .side01 .back { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-color: #4038DC;
+    z-index: -1;
+    transform: rotateY(-180deg);
+    color: #fff;
+    text-align: center;
+}
+
+.column.col07 .side01 .back svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column.col07 .side01:hover .front{
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+
+.column.col07 .side01:hover .back {
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+
+/* col08 side02 effect02 */
+.column.col08 .side02 {
+    position: relative;
+    display: block;
+    perspective: 600px;
+}
+
+.column.col08 .side02 .card {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;    
+    transition: all .5s ease-in-out;
+}
+
+.column.col08 .side02 .front {  
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+
+.column.col08 .side02 .back {
+    z-index: -1;
+   transform: rotateY(-180deg);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.column.col08 .side02:hover .front {
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+
+.column.col08 .side02:hover .back {
+    z-index: 1;
+    transform: rotateY(0deg);
+}
+
+.column.col08 .side02 figcaption {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    text-align: center;
+}
+
+.column.col08 .side02 figcaption h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    background: rgba(0,0,0,0.4);
+    padding: 3px 10px;
+}
+
+/* col09 side03 effect03 */
+.column.col09 .side03 {position: relative; background: #000; overflow: hidden;}
+
+.column.col09 .side03 figure img {
+        display: block;
+        transition: all 0.3s ease;
+}
+
+.column.col09 .side03 figure:hover img {
+    transition: all 0.3s ease;
+    opacity: 0.4;
+    
+}
+
+.column.col09 .side03 figcaption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 25px; /* figcaption 배경만드는법 1 */
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(350%, -50%) rotate(180deg);  
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+/* .side3 figcaption:after { //figcaption 배경 만드는법 2
+    content: '';
+    width: 100px; height: 100px;
+    background: #000; border-radius: 50%;
+    position: absolute; left: 50%; top: 50%; z-index: -1;
+    transform: translate(-50%, -50%);
+} */
+
+.column.col09 .side03 figure:hover figcaption {
+    transform: translate(-50%, -50%) rotate(0deg);  
+    opacity: 1;
+}
+
+.column.col09 .side03 figcaption h3 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.column.col09 .side03 figcaption em {
+    font-weight: bold;
+    display: block;
+}
