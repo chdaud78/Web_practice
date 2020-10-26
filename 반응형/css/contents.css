@@ -201,7 +201,9 @@
 /* col04 슬라이더 이미지 */
 .slider img {width: 100%;}
 
-.slider figure {position: relative;}
+.slider figure {
+    position: relative;
+}
 
 .slider figcaption {
     position: absolute;
@@ -319,7 +321,9 @@
     margin: 0.5%;
 }
 
-.square a img {width: 100%; display: block;}
+.square a img {
+    width: 100%; display: block;
+}
 
 .square a em {
     background: rgba(0,0,0,0.77);
