@@ -1,0 +1,177 @@
+/* 레이아웃 */
+.container {
+    width: 1280px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 0 28px;
+}
+
+#header {
+    width: 100%;
+    border-bottom: 1px solid #c6c6c6;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* .header {
+    overflow: hidden;
+} */
+
+/* 로고 */
+.header .header-logo {
+    float: left;
+}
+
+.header .header-logo em {
+    padding: 15px 8px 5px 0;
+    display: inline-block;
+}
+
+.header .header-logo em img {
+    width: 155px;
+}
+
+.header .header-logo strong {
+    display: block;
+    position: absolute;
+    left: 194px;
+    top: 23px;
+}
+
+.header .header-logo strong img {
+    width: 126px
+}
+
+/* header media query시 메뉴 아이콘 */
+.header .header-menu-sub {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+.header .header-menu-sub .header-menu-icon{
+    display: block;
+    width: 25px;
+    height: 10px;
+    background: rgba(0,0,0,0);
+    padding: 15px 10px 10px 10px;
+}
+
+.header .header-menu-sub span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #39106a;
+}
+
+.header .header-menu-sub span::before {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: #39106a;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+
+.header .header-menu-sub span::after {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: #39106a;
+    position: absolute;
+    left: 0;
+    top: -7px;
+}
+
+/* header 메뉴 */
+.header .header-menu {
+    float: right;
+}
+
+.header .header-menu ul {
+    border-left: 1px solid #c6c6c6;
+}
+
+.header .header-menu li {
+    width: 103px;
+    border-right: 1px solid #c6c6c6;
+    float: left;
+    text-align: center;
+}
+
+.header .header-menu li a {
+    display: block;
+    padding: 19px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444;
+}
+
+@media (max-width: 1290px) {
+    .container {
+        width: 100%;
+    }
+
+    .header .header-menu li {
+        width: 93px;
+    }
+
+    .header .header-menu li a {
+        padding: 17px 10px;
+        font-size: 15px;
+    }
+
+    .header .header-logo em {
+        padding: 11px 8px 5px 0;
+    }
+
+    .header .header-logo strong  {
+        top: 19px
+    }
+}
+
+@media (max-width: 1024px) {
+    .row {
+        padding: 0 24px;
+    }
+
+    .header .header-menu {
+        display: none;
+    }
+
+    .header .header-logo {
+        float: none;
+        text-align: center;
+    }
+
+    .header .header-menu-sub {
+        display: block;
+    }
+
+    .header .header-logo strong {
+        left: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        padding: 0 16px;
+    }
+
+    .header .header-menu-sub {
+        right: 6px;
+    }
+
+    .header .header-logo {
+        text-align: left;
+    }
+
+    .header .header-logo strong {
+        display: none;
+    }
+}
