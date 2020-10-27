@@ -1,0 +1,342 @@
+.movie {
+    padding: 100px 0;
+}
+
+.movie-menu {
+    margin-bottom: 60px;
+}
+
+.movie-menu ul {
+    overflow: hidden;
+    width: 848px;
+    margin: 0 auto;
+}
+
+.movie-menu li {
+    float: left;
+    width: 210px;
+    text-align: center;
+    border: 1px solid #c4c4c4;
+    margin-right: -1px;
+}
+
+.movie-menu li.active a{
+    background: #666;
+    color: #fff;
+}
+
+.movie-menu li a{
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #666;
+    font-weight: 700;
+}
+
+.movie-chart {
+    overflow: hidden;
+}
+
+.movie-chart .box-office {
+    margin-right: 15px;
+    display: inline-block;
+    width: 292px;
+}
+
+.movie-chart .box-office:last-child {
+    margin: 0;
+}
+
+.movie-chart .box-office .poster {
+    position: relative;
+}
+
+.movie-chart .box-office .poster img{
+    display: block;
+}
+
+.movie-chart .box-office .poster .rank {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    line-height: 50px;
+    background-color: #38116a;
+    text-align: center;
+}
+
+.movie-chart .box-office .poster .rank strong {
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,1);
+}
+
+.movie-chart .box-office .poster .mx {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.movie-chart .box-office .poster .mx span {
+    width: 103px;
+    height: 25px;
+    display: block;
+}
+
+.movie-chart .box-office .poster .mx .m {
+    background-position: 0 -75px;
+}
+
+.movie-chart .box-office .poster .mx .b {
+    background-position: 0 -100px;
+}
+
+.movie-chart .box-office .info {
+    background: #fff;
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+}
+
+.movie-chart .box-office .info h3 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.movie-chart .box-office .info h3 .all {
+    background-position: -87px -125px;
+}
+
+.movie-chart .box-office .info h3 .a12 {
+    background-position: -58px -125px;
+}
+
+.movie-chart .box-office .info h3 .a15 {
+    background-position: 0 -125px;
+}
+
+.movie-chart .box-office .info h3 .a19 {
+    background-position: -29px -125px;
+}
+
+.movie-chart .box-office .info h3 span {
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    margin-top: 9px;
+    vertical-align: -2px;
+}
+
+.movie-chart .box-office .info .infor-btn {
+    overflow: hidden;
+}
+
+.movie-chart .box-office .info .infor-btn a {
+    float: left; 
+    width: 49%; 
+    margin-right: 2%; 
+    text-align: center; 
+    background: #f2f2f2; 
+    font-size: 18px; 
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.movie-chart .box-office .info .infor-btn a:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1290px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 960px) {
+    
+    body {
+        background: #d9d7e0;
+    }
+    .movie-menu ul {
+        width: auto;
+    }
+    .movie-menu li {
+        width: 25%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    #movie .row {
+        background: #fff;
+        margin: 24px;
+        padding: 24px;
+    }
+    #movie .ir_so {
+        position: static;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        text-indent: 0;
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .movie {
+        padding: 0;
+    }
+    .movie-menu {
+        margin-bottom: 30px;
+    }
+    .movie-menu ul {
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .movie-menu ul::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #e1e1e1;
+    }
+    .movie-menu li {
+        width: auto;
+        border: 0;
+    }
+    .movie-menu li a {
+        position: relative;
+        font-size: 18px;
+        color: #666;
+        font-weight: 400;
+        padding: 0;
+        margin-right: 35px;
+    }
+    .movie-menu li.active a {
+        background: none;
+        color: #666;
+    }
+    .movie-menu li.active a::before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 2px;
+        background: #666;
+    }
+}
+
+@media (max-width: 600px) {
+    #movie .container {
+        position: relative;
+    }
+    #movie .container:after {
+        content: ''; 
+        position: absolute; 
+        z-index: 20; 
+        top: 0; 
+        right: 0; 
+        width: 8px; 
+        height: 100%; 
+        background: #d9d7e0;
+    }  
+    #movie .row {
+        position: relative;
+        margin: 8px;
+        padding: 16px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    #movie .row:after {
+        content: ''; 
+        position: absolute; 
+        top: 0; 
+        right: 0; 
+        z-index: 10; 
+        width: 24px; 
+        height: 100%; 
+        background: #fff;
+    }
+    #movie .ir_so {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .movie-menu {
+        margin-bottom: 20px;
+    }
+    .movie-menu ul {
+        padding-bottom: 8px;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .movie-menu ul:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #e1e1e1;
+    }
+    .movie-menu li a {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .movie-menu li.active a:before {
+        bottom: -10px;
+    }
+    .movie-chart {
+        position: relative;
+        z-index: 30;
+    }
+    .movie-chart .box-office .info {
+        padding: 5px;
+    }
+    .movie-chart .box-office .info h3 {
+        text-align: center; 
+        margin: 5px 0 10px;
+    }
+    .movie-chart .box-office .info h3 strong {
+        display: block; 
+        font-size: 19px; 
+        color: #222; 
+        font-weight: 300;
+    }
+    .movie-chart .box-office .info h3 span {
+        display: none;
+    }
+    .movie-chart .box-office .info .infor-btn a {
+        width: 52%; 
+        margin-left: 24%; 
+        display: block; 
+        margin-right: 0; 
+        padding: 5px; 
+        color: #777; 
+        margin-bottom: 5px; 
+        box-sizing: border-box; 
+        font-size: 14px; 
+        background: none; 
+        border: 1px solid #ddd;
+    }
+    .movie-chart .box-office .info .infor-btn a:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    
+}
+
+@media (max-width: 320px){
+    
+}

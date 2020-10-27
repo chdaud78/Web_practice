@@ -129,12 +129,12 @@
 }
 
 .banner-slider .ss2 {
-    background: url("assets/img/swiper01.jpg") no-repeat center center;
+    background: url("assets/img/main_slider01_2000.jpg") no-repeat center center;
     background-size: cover;
 }
 
 .banner-slider .ss3 {
-    background: url("assets/img/swiper01.jpg") no-repeat center center;
+    background: url("assets/img/main_slider02_2000.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -188,6 +188,9 @@
 }
 
 @media (max-width: 960px) {
+    .banner-slider {
+        height: 500px;
+    }
     .banner-slider .swiper-slide h2 {
         margin-top: 170px;
         font-size: 37px;
@@ -213,7 +216,43 @@
 }
 
 @media (max-width: 600px) {
+    .banner-slider {
+        height: 400px;
+    }
+    .banner-slider .swiper-slide h2 {
+        margin-top: 140px;
+        font-size: 24px;
+        line-height: 30px;;
+    }
 
+    .banner-slider .swiper-slide h2 em {
+        font-size: 20px;
+    }
+
+    .banner-slider .swiper-slide p {
+        font-size: 14px;
+        padding-top: 25px;
+    }
+
+    .banner .banner-menu .bm-right .bm-right-btn01 a {
+        padding: 3px 5px 5px 5px;
+        background: rgba(0,0,0,0);
+        border-color: #fff;
+        font-size: 14px; 
+        color: #fff;
+    }
+
+    .banner .banner-menu .bm-right .bm-right-btn02 a {
+        padding: 3px 5px 5px 5px;
+        background: rgba(0,0,0,0);
+        border-color: #fff;
+        font-size: 14px;
+        color: #fff;
+    }
+    .swiper-pagination-bullet {
+        width: 13px !important;
+        height: 13px !important;
+    }
 }
 
 @media (max-width: 480px){
