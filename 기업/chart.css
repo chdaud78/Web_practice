@@ -1,3 +1,6 @@
+#movie {
+    background-color: #f8f8f8;
+}
 .movie {
     padding: 100px 0;
 }
@@ -158,10 +161,7 @@
 }
 
 @media (max-width: 960px) {
-    
-    body {
-        background: #d9d7e0;
-    }
+
     .movie-menu ul {
         width: auto;
     }
@@ -172,6 +172,12 @@
 }
 
 @media (max-width: 768px) {
+    body {
+        background: #d9d7e0;
+    }
+    #movie {
+        background: none;
+    }
     #movie .row {
         background: #fff;
         margin: 24px;

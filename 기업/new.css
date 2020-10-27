@@ -1,0 +1,112 @@
+.new {
+    padding: 100px 0;
+    position: relative;
+}
+
+.new h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.new .new-left {
+    position: relative;
+    margin-right: 423px;
+    height: 500px;
+    background: url("assets/img/new01.jpg") center center;
+    background-size: cover;
+}
+
+.new .new-left .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.new .new-left .play .st0 {
+    fill: #fff;
+    opacity: 0.3;
+}
+
+.new .new-left .play .st1 {
+    fill: #fff;
+}
+
+/* 폰트 깨지지 않게 하기위해 position: absolute 사용 */
+.new .new-right {
+    padding: 34px;
+    position: absolute;
+    right: 0;
+    top: 165px;
+    width: 400px;
+    height: 500px;
+    background: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.new-right .new-title {
+    font-size: 25px;
+}
+
+.new-right .new-release {
+    font-size: 15px;
+}
+
+.new-right .star {
+    padding: 13px 0;
+}
+
+.new-right .star span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -3px;
+}
+
+.new-right .star .fill {
+    background-position: -393px 0;
+}
+
+.new-right .star .half {
+    background-position: -412px 0;
+}
+
+.new-right .star .nofill {
+    background-position: -374px 0;
+}
+
+.new-right .star strong {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.new-right .new-summary {
+    font-size: 14px;
+}
+
+.new-right .new-summary .new-summary-genre {
+    padding-bottom: 3px;
+}
+
+.new-right .new-summary .new-summary-age {
+    padding-bottom: 10px;
+}
+
+.new-right .new-summary .new-summary-desc {
+    margin-bottom: 20px;
+    height: 108px;
+    overflow: hidden;
+}
+
+
+.new-right .new-select {
+
+}
+
+.new-right .new-btn {
+
+}
