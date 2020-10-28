@@ -96,12 +96,19 @@
     color: #666;
 }
 
-.notice-tap .notice-content p {
-    color: #333;
-    padding-top: 3px;
+.notice-tap .notice-content a{
+    padding: 0;
+    border: 0;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 14px;
+}
+
+.notice-tap .notice-content p {
+    color: #333;
+    padding-top: 3px;
 }
 
 /* 할인카드 */

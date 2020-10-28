@@ -15,6 +15,25 @@
     background: #fff;
 }
 
+/* skip menu */
+#skip {
+    position: relative;
+}
+#skip a {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 140px;
+    border: 1px solid #fff;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#skip a:active, #skip a:focus {
+    top: 0;
+}
+
 /* .header {
     overflow: hidden;
 } */
