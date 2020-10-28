@@ -1,0 +1,338 @@
+.help {
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+/* notice */
+.notice {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.notice h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.notice-wrap {
+    position: relative;
+    height: 350px;
+    border: 1px solid #dbdbdb;
+    padding: 17px;
+}
+
+.notice-wrap .notice-tap {
+    overflow: hidden;
+}
+
+.notice-wrap .notice-tap .tap-title {
+    float: left;
+    margin-right: -1px;
+    text-align: center;
+}
+
+.notice-tap .tap-title.active a {
+    background: #fff;
+}
+
+.notice-tap .tap-title a {
+    display: block;
+    padding: 10px 20px;
+    width: 80px;
+    border: 1px solid #dbdbdb;
+    font-size: 15px;
+    color: #666;
+    background: #f5f5f5;
+}
+
+.notice-tap .tap-title .notice-content {
+    display: none;
+}
+
+.notice-tap .tap-title.active .notice-content {
+    display: block;
+}
+
+.notice-tap .notice-content {
+    margin-right: 17px;
+    position: absolute;
+    left: 17px;
+    top: 70px;
+    overflow: hidden;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.notice-tap .notice-content li {
+    width: 100%;
+    padding: 17px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.notice-tap .notice-content li:last-child {
+    border-bottom: 0;
+}
+
+.notice-tap .notice-content .bar {
+    position: relative;
+    padding-right: 14px;
+}
+
+.notice-tap .notice-content .bar::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    width: 1px;
+    height: 10px;
+    background: #999;
+}
+
+.notice-tap .notice-content em {
+    color: #666;
+}
+
+.notice-tap .notice-content p {
+    color: #333;
+    padding-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 할인카드 */
+.card {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card .card-wrap {
+    position: relative;
+    height: 350px;
+    border: 1px solid #dbdbdb;
+    padding: 17px;
+}
+
+.card .card-wrap li {
+    position: relative;
+    border: 1px solid #dbdbdb;
+    padding: 17px;
+    margin-bottom: 17px;
+    min-height: 102px;
+    box-sizing: border-box;
+}
+
+.card .card-wrap span {
+    position: absolute;
+    left: 17px;
+    top: 17px
+}
+
+.card .card-wrap img {
+    width: 115px;
+}
+
+.card .card-wrap strong {
+    display: block;
+    padding-left: 130px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+}
+
+.card .card-wrap em {
+    display: block;
+    padding-left: 130px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* 고객센터 */
+.service {
+    float: left;
+    width: 32%;
+}
+
+.service h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.service .service-wrap {
+    position: relative;
+    height: 350px;
+}
+
+.service .service-wrap ul {
+    overflow: hidden;
+}
+
+.service .service-wrap li {
+    float: left;
+    width: 50%;
+    height: 193px;
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.service .service-wrap a span {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.service .service-wrap a strong {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 1290px) {
+
+}
+
+@media (max-width: 1024px) {
+    .notice {
+        width: 49%;
+        margin-right: 2%;
+    }
+    .card {
+        width: 49%;
+        margin-right: 0;
+    }
+    .service {
+        width: 100%;
+        margin-top: 2%;
+    }
+    .service h2 {
+        display: none;
+    }
+    .service .service-wrap {
+        height: auto;
+        border: 1px solid #dbdbdb;
+    }
+    .service .service-wrap li {
+        width: 25%;
+        height: auto;
+        border: 0;
+    }
+    .service .service-wrap a span {
+        display: block;
+    }
+    .service .service-wrap a strong {
+        display: block;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 768px) {
+    #help .row {
+        padding: 0 24px;
+    }
+    .notice {
+        width: 100%;
+        background: #fff;
+        margin-top: 24px;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+    .notice h2 {
+        font-size: 24px;
+        font-weight: 700;
+        height: 27px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .card {
+        width: 100%;
+        background: #fff;
+        margin-top: 24px;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+    .card h2 {
+        font-size: 24px;
+        font-weight: 700;
+        height: 27px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .service {
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+    }
+    .service h2 {
+        font-size: 24px;
+        font-weight: 700;
+        height: 27px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .service .service-wrap {
+        border: 0;
+    }
+    .service .service-wrap a span {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    #help .row {
+        padding: 0 8px;
+    }
+    .help {
+        padding-bottom: 8px;
+    }
+    .notice {
+        margin-top: 8px;
+        padding: 16px;
+    }
+    .notice h2 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .card {
+        margin-top: 8px;
+        padding: 16px;
+    }
+    .card h2 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .service {
+        margin-top: 8px;
+    }
+    .service .service-wrap li {
+        width: 50%;
+        border: 1px solid #dbdbdb;
+    }
+}
+
+@media (max-width: 480px){
+    
+}
+
+@media (max-width: 320px){
+    
+}

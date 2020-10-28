@@ -1,0 +1,164 @@
+#footer {
+    background: #211f1f;
+}
+
+.footer-sns {
+    position: absolute;
+    top: 33px;
+    right: 17px;
+    z-index: 1;
+}
+
+.footer-sns li {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+}
+
+.footer-sns .s1 {
+    background-position: 0 -375px;
+}
+
+.footer-sns .s2 {
+    background-position: -36px -375px;
+}
+
+.footer-sns .s3 {
+    background-position: -72px -375px;
+}
+
+.footer-sns .s4 {
+    background-position: -108px -375px;
+}
+
+.footer-sns .s5 {
+    background-position: -144px -375px;
+}
+
+.footer-sns .s1:hover {
+    background-position: 0 -411px;
+}
+
+.footer-sns .s2:hover {
+    background-position: -36px -411px;
+}
+
+.footer-sns .s3:hover {
+    background-position: -72px -411px;
+}
+
+.footer-sns .s4:hover {
+    background-position: -108px -411px;
+}
+
+.footer-sns .s5:hover {
+    background-position: -144px -411px;
+}
+
+.footer-sns .tel {
+    padding: 5px;
+    text-align: right;
+}
+.footer-sns .tel a {
+    font-size: 21px;
+    color: #8f8f8f;
+}
+
+.footer-sns .tel span{
+    color: #fff
+}
+
+.footer-info {
+    padding: 50px 0;
+    width: 80%;
+    color: #8f8f8f;
+}
+
+.footer-info h2 img {
+    width: 150px;
+}
+
+.footer-info ul {
+    padding: 15px 0;
+}
+
+.footer-info li {
+    position: relative;
+    display: inline;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+.footer-info li::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 1px;
+    height: 11px;
+    background: #8f8f8f;
+}
+
+.footer-info li a {
+    color: #8f8f8f;
+}
+
+.footer-info p {
+    padding-bottom: 15px;
+}
+
+.footer-info p .bar2 {
+    position: relative;
+    padding-right: 15px;
+}
+
+.footer-info p .bar2::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 1px;
+    height: 11px;
+    background: #8f8f8f;
+}
+
+
+@media (max-width: 1290px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 960px) {
+    .footer-sns {
+        position: static;
+        text-align: center;
+        background: #352c2c;
+        padding-bottom: 15px;
+    }
+    .footer-sns .tel {
+        display: none;
+    }
+    .footer-info {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 480px){
+    
+}
+
+@media (max-width: 320px){
+    
+}
